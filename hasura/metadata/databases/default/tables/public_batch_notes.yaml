@@ -1,0 +1,7 @@
+table:
+  name: batch_notes
+  schema: public
+object_relationships:
+  - name: batch
+    using:
+      foreign_key_constraint_on: batch_id

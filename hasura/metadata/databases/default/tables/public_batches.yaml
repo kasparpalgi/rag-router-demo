@@ -1,0 +1,11 @@
+table:
+  name: batches
+  schema: public
+array_relationships:
+  - name: batch_notes
+    using:
+      foreign_key_constraint_on:
+        column: batch_id
+        table:
+          name: batch_notes
+          schema: public
